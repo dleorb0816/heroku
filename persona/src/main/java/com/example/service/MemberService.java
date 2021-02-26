@@ -66,7 +66,7 @@ public class MemberService {
             sb.append("grant_type=authorization_code");
             sb.append("&code=" + authorize_code);
             sb.append("&client_id=e7b31d48129fdcc0e4cf3d81be977e07");  //본인이 발급받은 key
-            sb.append("&redirect_uri=http://localhost:8082/member/kalogin");     // 본인이 설정해 놓은 경로
+            sb.append("&redirect_uri=http://gyu0816.herokuapp.com/member/kalogin");     // 본인이 설정해 놓은 경로
             bw.write(sb.toString());
             bw.flush();
 
